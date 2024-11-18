@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Livewire;
+
+use App\Models\Post;
+use Livewire\Component;
+use Livewire\Attributes\Reactive;
+
+class LikeButton extends Component
+{
+    #[Reactive]
+public Post $post;
+
+public function toggleLike()
+{
+   if(auth()->guest()){
+    return $this->redirect(route('login'), true);
+   }
+
+   $user = auth()->user();
+
+//    $hasLiked = $user->
+
+   if($user->hasLiked($this->post))
+   {
+    $user->likes()->detach($this->post);
+    return;
+   }
+   $user->likes()->attach($this->post);
+}
+
+    public function render()
+    {
+        // dd($this->post);
+        return view('livewire.like-button');
+    }
+}
