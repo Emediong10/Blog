@@ -7,7 +7,7 @@
         </h1>
         <p class="mt-1 text-lg text-gray-500">Best Blog in the universe</p>
         <a class="inline-block px-3 py-2 mt-5 text-lg text-white bg-gray-800 rounded"
-            href="http://127.0.0.1:8000/blog">Start
+            href="/blog">Start
             Reading</a>
     </div>
 
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <a class="block mt-10 text-lg font-semibold text-center text-yellow-500"
-                    href="http://127.0.0.1:8000/blog">More
+                    href="/blog">More
                     Posts</a>
             </div>
             <hr>
@@ -48,7 +48,7 @@
             </div>
             </div>
             <a class="block mt-10 text-lg font-semibold text-center text-yellow-500"
-                href="http://127.0.0.1:8000/blog">More
+                href="/blog">More
                 Posts</a>
         </div>
 

@@ -5,34 +5,34 @@
 </a>
 
 
-        <div class="ml-10 top-menu">
+        {{-- <div class="ml-10 top-menu">
             <ul class="flex space-x-4">
-                
+
 
         <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
             {{ __('Home') }}
         </x-nav-link>
-    
+
         <x-nav-link href="{{ route('posts.index') }}" :active="request()->routeIs('posts.index')">
             {{ __('Blog') }}
         </x-nav-link>
-    
-               
 
-                
+
+
+
 
             </ul>
-        </div>
+        </div> --}}
     </div>
     <div id="nav-right" class="flex items-center md:space-x-6">
         @auth
-      
+
         @include('layouts.partials.header-right-auth')
-        
+
       @else
             @include('layouts.partials.header-right-guest')
-    
-      
+
+
         @endauth
 
 
